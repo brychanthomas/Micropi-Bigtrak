@@ -7,7 +7,6 @@ int BPWM = 9;
 
 void setup() {
   Serial1.begin(115200);
-  Serial.begin(115200);
   Serial1.print("AT+CWMODE=2\r\n");
   delay(100);
   Serial1.print("AT+CIPMUX=1\r\n");
